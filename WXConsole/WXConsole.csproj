@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <TargetFrameworks>net6.0;net7.0;net48;net481</TargetFrameworks>
+        <LangVersion>10.0</LangVersion>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <Authors>WeeXnes</Authors>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <Reference Include="System.Net.Http" Condition="'$(TargetFramework)' == 'net48' OR '$(TargetFramework)' == 'net481'" />
+    </ItemGroup>
+
+</Project>
